@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO - NUTRIFIT SUPLEMENTOS</title>
+    <link rel="stylesheet" href="estilo/cadastro.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>NUTRIFIT SUPLEMENTOS</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cadastro">
+            <form class="form-cadastro">
+                <h3>CRIE SUA CONTA</h3>
+                <p>Junte-se à elite. Crie sua conta para acessar equipamentos de alta performance, suplementos de alta
+                    potência e ferramentas de monitoramento.</p>
+                <label for="nome">NOME</label>
+                <input type="text" name="nome" id="nome" placeholder="SEU NOME">
+
+                <div class="linha-form">
+                    <div class="campo">
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="campo">
+                        <label for="numtel">NÚMERO DE TELEFONE</label>
+                        <input type="tel" name="numtel" id="numtel">
+                    </div>
+                </div>
+
+                <div class="linha-form">
+                    <div class="campo">
+                        <label for="datanascimento">DATA DE NASCIMENTO</label>
+                        <input type="date" name="datanascimento" id="datanascimento">
+                    </div>
+                    <div class="campo">
+                        <label for="genero">GÊNERO</label>
+                        <select name="genero" id="genero">
+                            <option value="embranco">SELECIONE...</option>
+                            <option value="masculin">MASCULINO</option>
+                            <option value="feminino">FEMININO</option>
+                        </select>
+                    </div>
+                </div>
+                <p>ENDEREÇO</p>
+                <div class="linha-form">
+                    <div class="campo">
+                        <label for="cep">CEP</label>
+                        <input type="number" name="cep" id="cep">
+                    </div>
+                    <div class="campo">
+                        <label for="endereco">ENDEREÇO</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <div class="campo">
+                        <label for="numero-endereco">NÚMERO</label>
+                        <input type="text" name="numero-endereco" id="numero-endereco">
+                    </div>
+                    <div class="campo">
+                        <label for="complemento">COMPLEMENTO</label>
+                        <input type="text" name="complemento" id="complemento">
+                    </div>
+                </div>
+                <div class="linha-form">
+                    <div class="campo">
+                        <label for="cidade">CIDADE</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div class="campo">
+                        <label for="estado">ESTADO</label>
+                        <input type="text" name="estado" id="estado">
+                    </div>
+                </div>
+                <p>CRIE SUA SENHA</p>
+                <label for="senha">SENHA</label>
+                <input type="password" name="senha" id="senha">
+
+                <label for="confirma-senha">CONFIRMAR SENHA</label>
+                <input type="password" name="confirmar-senha" id="confirma-senha">
+                <button type="submit" class="btn-acessar-conta">ACESAR CONTA</button>
+                <div>
+                    <input type="checkbox" name="termos" id="termos">
+                    <label for="termos">ACEITO OS TERMOS DE USO E A <a href="#" class="link-tela-login">POLÍTICA</a> DE <a href="#" class="link-tela-login">PRIVACIDADE</a>.</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="atualizacoes" id="atualizacoes">
+                    <label for="atualizacoes">INSCREVA-SE PARA RECEBER ATUALIZAÇÕES DE ALTA ADRENALINA, ACESSO
+                        ANTECIPADO A LANÇAMENTOS E DICAS DE PERFORMANCE.</label>
+                </div>
+                <p class="texto-tela-login">JÁ POSSUI UMA CONTA? <a href="tela_login.html" class="link-tela-login">FAÇA LOGIN.</a></p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

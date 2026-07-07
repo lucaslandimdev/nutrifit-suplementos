@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --fundo-01: #0E0E0E;
+    --fundo-02: #201F1F;
+    --fundo-03: #000000;
+    --fundo-04: #262626;
+    --fundo-05: #131313;
+    --fundo-06: #FEB700;
+    --texto-cinza: #ADAAAA;
+    --texto-branco: #FFFFFF;
+    --texto-marrom: #392700;
+    --texto-laranja: #FEB700;
+    --texto-laranja-claro: #FFC965;
+    --gradiente-laranja: linear-gradient(to right, #FFC965, #FEB700);
+    --gradiente-cinza: linear-gradient(to right, #392700 70%, #FEB700);
+    --font-01: "Inter", sans-serif;
+    --font-02: "Space Grotesk", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--fundo-02);
+    color: var(--texto-cinza);
+    font-family: var(--font-02);
+}
+header {
+    text-align: center;
+    padding: 30px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro {
+    background-color: var(--fundo-05);
+    border: 1px solid var(--texto-cinza);
+    margin: auto;
+    width: 100%;
+    max-width: 650px;
+}
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+.form-cadastro h3{
+    text-align: center;
+}
+.form-cadastro input {
+    padding: 15px;
+    background-color: var(--fundo-02);
+    color: var(--texto-branco);
+    border: 1px solid var(--texto-cinza);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.form-cadastro input:hover {
+    border: 1px solid var(--fundo-06);
+}
+.form-cadastro select {
+    background-color: var(--fundo-02);
+    border: 1px solid var(--texto-cinza);
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--texto-branco);
+}
+.form-cadastro select:hover {
+    border: 1px solid var(--fundo-06);
+}
+.linha-form {
+    display: flex;
+    gap: 20px;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.btn-acessar-conta {
+    background-color: var(--fundo-06);
+    color: var(--texto-marrom);
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    font-family: var(--font-02);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.btn-acessar-conta:hover {
+    background-color: var(--texto-laranja-claro);
+    color: var(--texto-branco);
+}
+.texto-tela-login {
+    text-align: center;
+}
+.link-tela-login {
+    text-align: center;
+    text-decoration: none;
+    color: var(--texto-laranja);
+    font-weight: bold;
+    transition: 0.4s;
+}
+.link-tela-login:hover {
+    color: var(--texto-branco);
+}
+@media screen and (max-width: 640px) {
+    .linha-form {
+        flex-direction: column;
+    }
+}

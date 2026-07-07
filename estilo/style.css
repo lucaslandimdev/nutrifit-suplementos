@@ -562,6 +562,9 @@ main div.apresentacao-produto p {
 }
 
 @media screen and (max-width: 640px) {
+    .nav-list {
+        display: none;
+    }
     .apresentacao-inicial {
         display: grid;
         grid-template-columns: 1fr;
@@ -599,9 +602,6 @@ main div.apresentacao-produto p {
         gap: 40px;
     }
 
-    .nav-list {
-        display: none;
-    }
 
     .time {
         width: 70vw;
