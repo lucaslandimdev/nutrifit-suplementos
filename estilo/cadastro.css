@@ -89,7 +89,7 @@ main {
     flex-direction: column;
     flex: 1;
 }
-p .form-cadastro-texto {
+.form-cadastro-texto {
     font-size: 20px;
     color: var(--texto-branco);
 }
