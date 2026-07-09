@@ -89,6 +89,10 @@ main {
     flex-direction: column;
     flex: 1;
 }
+.form-cadastro-texto {
+    font-size: 20px;
+    color: var(--texto-branco);
+}
 .btn-acessar-conta {
     background-color: var(--fundo-06);
     color: var(--texto-marrom);
